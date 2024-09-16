@@ -1,4 +1,4 @@
-![contact us form](./design/desktop.svg)
+![contact us form](https://github.com/YAQ0T/contact-us-form-challenge/blob/master/design/Desktop.svg)
 
 **Challenge Title**
 Contact Us Form
