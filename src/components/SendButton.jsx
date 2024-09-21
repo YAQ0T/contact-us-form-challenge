@@ -1,18 +1,19 @@
+import { Input } from "@mui/joy";
 import React from "react";
-import Button from "@mui/joy/Button";
 
 export default function SendButton() {
   return (
-    <Button
+    <Input
       sx={{
-        background: "rgb(108, 182, 255)",
         background:
           "linear-gradient(90deg, rgba(108,182,255,1) 0%, rgba(115,157,255,1) 35%, rgba(121,133,255,1) 100%)",
         width: "63%",
-        height: "60px",
+        height: "55px",
+        marginBlock: "15px",
+        color: "#FFFFFF",
       }}
-    >
-      Send
-    </Button>
+      type="submit"
+      value={"Send"}
+    />
   );
 }

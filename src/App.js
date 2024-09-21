@@ -1,13 +1,12 @@
 import "./App.css";
-import SendButton from "./components/SendButton";
-import TextField from "./components/TextField";
+
 import "@fontsource/inter";
+import MainForm from "./pages/MainForm";
 
 function App() {
   return (
     <div className="App">
-      {/* <SendButton /> */}
-      <TextField placeholder={"assd"} />
+      <MainForm />
     </div>
   );
 }

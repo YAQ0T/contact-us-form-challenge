@@ -1,22 +1,21 @@
 import React from "react";
 import Input from "@mui/joy/Input";
-
-export default function TextField({
+import { Textarea } from "@mui/joy";
+export default function TextArea({
   placeholder,
-  type = "text",
   register,
   registerName = "text",
   width = "63%",
-  height = "55px",
+  height = "125px",
 }) {
   return (
-    <Input
+    <Textarea
       sx={{
         "&::before": {
           "box-shadow":
-            "var(--Input-focusedInset, inset) 0 0 0 calc(var(--Input-focused)* var(--Input-focusedThickness)) #7985FF",
+            "var(--Textarea-focusedInset, inset) 0 0 0 calc(var(--Textarea-focused)* var(--Textarea-focusedThickness)) #7985FF",
         },
-        "&.Mui-focused .MuiInput-input": {
+        "&.Mui-focused .MuiTextarea-textarea": {
           color: "#7985FF",
         },
         width: { width },
@@ -25,7 +24,6 @@ export default function TextField({
         fontSize: "14px",
       }}
       placeholder={placeholder}
-      type={type}
       required
       {...register(registerName, { required: true })}
     />
